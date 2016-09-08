@@ -1,0 +1,21 @@
+nested_array = [ 1, [2, 3,] 4, 5,[6, 7] 8 ]
+
+// flatten and find sum
+
+// in JavaScript 
+
+function flatten (arr) {
+  var b = Array.prototype.concat.apply([], arr);
+    if (b.length != arr.length) {
+      b = flatten(b);
+  };
+
+  var sumArray = return b;
+   var total = 0;
+    for(i=0; i<sumArray.length; i++){
+        total += sumArray[i];
+    }
+}
+
+//console.log (total)
+
